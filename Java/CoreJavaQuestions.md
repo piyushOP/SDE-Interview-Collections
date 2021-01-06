@@ -10,7 +10,7 @@ Nodes (Entry, Value) are stored in buckets, multiple nodes can be in the same bu
 
 Basically following operation is performed to calculate index, index = hashCode(key) & (n-1), where n is number of buckets or the size of array.
 
-HashMap default size 16, load factor 0.75
+HashMap default size 16, load factor 0.75. The Load factor is a measure that decides when to increase the HashMap capacity to maintain the get() and put() operation complexity of O(1). The default load factor of HashMap is 0.75f (75% of the map size).
 
 For put, hashcode of key is calculated and element is inserted, in case of collision, new node is added to previous node at that position
 
@@ -51,3 +51,23 @@ HashMap is non synchronized, and allows null key whereas Hashtable is synchroniz
 **References:**
 
 https://www.geeksforgeeks.org/differences-between-hashmap-and-hashtable-in-java/
+
+### Serialization / Deserialization in Java
+
+**Summary:**
+
+Serialization is a mechanism of converting the state of an object into a byte stream. Deserialization is the reverse process where the byte stream is used to recreate the actual Java object in memory. This mechanism is used to persist the object.
+
+It is mainly used to travel object's state on the network. It is mainly used in Hibernate, RMI, JPA, EJB and JMS technologies.
+
+We must have to implement the java.io.Serializable interface for serializing the object.
+
+For serializing the object, we call the writeObject() method ObjectOutputStream, and for deserialization we call the readObject() method of ObjectInputStream class.
+
+> If there is any static data member in a class, it will not be serialized because static is the part of class not object.
+
+**References:**
+
+https://www.javatpoint.com/serialization-in-java
+
+

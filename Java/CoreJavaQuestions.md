@@ -1,4 +1,4 @@
-#### Internal Implementation of HashMap:
+### Internal Implementation of HashMap:
 
 **Summary:**
 
@@ -25,7 +25,7 @@ HashSet works like HashMap, but without
 https://www.geeksforgeeks.org/internal-working-of-hashmap-java/
 
 
-#### Types of Map in Java
+### Types of Map in Java
 
 **Summary:**
 
@@ -42,7 +42,7 @@ Hashtable is synchronized, in contrast to HashMap. It has an overhead for synchr
 https://www.programcreek.com/2013/03/hashmap-vs-treemap-vs-hashtable-vs-linkedhashmap/
 
 
-#### HashMap vs HashTable
+### HashMap vs HashTable
 
 **Summary:**
 

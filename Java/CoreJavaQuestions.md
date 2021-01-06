@@ -12,13 +12,13 @@ Basically following operation is performed to calculate index, index = hashCode(
 
 HashMap default size 16, load factor 0.75. The Load factor is a measure that decides when to increase the HashMap capacity to maintain the get() and put() operation complexity of O(1). The default load factor of HashMap is 0.75f (75% of the map size).
 
-For put, hashcode of key is calculated and element is inserted, in case of collision, new node is added to previous node at that position
+For put, hashcode of key is calculated and element is inserted, in case of collision, new node is added to previous node at that position.
 
-For get, hashcode of key is used first to find bucket, then equals is used to check exact match
+For get, hashcode of key is used first to find bucket, then equals is used to check exact match.
 
-Java 8 hash elements use balanced trees instead of linked lists after a certain threshold is reached. Which means HashMap starts with storing Entry objects in linked list but after the number of items in a hash becomes larger than a certain threshold, the hash will change from using a linked list to a balanced tree, which will improve the worst case performance from O(n) to O(log n)
+Java 8 hash elements use balanced trees instead of linked lists after a certain threshold is reached. Which means HashMap starts with storing Entry objects in linked list but after the number of items in a hash becomes larger than a certain threshold, the hash will change from using a linked list to a balanced tree, which will improve the worst case performance from O(n) to O(log n).
 
-HashSet works like HashMap, but without 
+HashSet works like HashMap, but uses just key instead of key value pair.
 
 **References:**
 
@@ -33,7 +33,7 @@ HashMap is implemented as a hash table, and there is no ordering on keys or valu
 
 TreeMap is implemented based on red-black tree structure (implements SortedMap), and it is ordered / sorted by the key. Custom objects need to implement Comparable interface since sorting is done.
 
-LinkedHashMap preserves the insertion order
+LinkedHashMap preserves the insertion order.
 
 Hashtable is synchronized, in contrast to HashMap. It has an overhead for synchronization. This is the reason that HashMap should be used if the program is thread-safe.
 

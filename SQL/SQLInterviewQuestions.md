@@ -7,8 +7,6 @@ Group By is used arrange data based on field(s). It is generally used with SELEC
 Generally used with aggregate functions. Either aggregate functions or only those columns used with GROUP BY clause can be used with SELECT for that query.
 
 
-
-
 **References:**
 
 https://www.tutorialspoint.com/sql/sql-group-by.htm

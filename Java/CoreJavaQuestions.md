@@ -95,3 +95,25 @@ Java provides us with the synchronized keyword, which acts like a lock to a part
 **References:**
 
 https://stackabuse.com/synchronized-keyword-in-java/
+
+### Comparator in JAVA
+
+**Summary:**
+
+Comparator can be used to implement custom logic for sorting or to add comparison feature to user defined objects.
+Custom Comparator class must implement Comparator<CustomObject>  andoverride method -> public int compare(CustomObj obj1, CustomObj obj2) -> and return greater than 0 for ascending, less than 0 for descending or 0 for equals case. Then use Collections.sort(iterables, new CustomComparator()) to sort.
+
+Example for a Student class sorted in ascending order on the basis of age field:
+
+class StudentComparator implements Comparator<Student> {
+    @Override
+    public int compare(Student s1, Student s2) {
+        return (s1.age - s2.age);
+    }
+}
+
+Sort using: Collections.sort(studentList, new StudentComparator());
+
+**References:**
+
+https://www.geeksforgeeks.org/comparator-interface-java/
